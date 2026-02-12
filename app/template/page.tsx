@@ -23,6 +23,12 @@ const templates = [
     href: "/template/product",
     icon: "arrow-right" as const,
   },
+  {
+    title: "Banking",
+    description: "Account balances, transactions, spending analytics, and card management.",
+    href: "/template/banking",
+    icon: "arrow-right" as const,
+  },
 ];
 
 export default function TemplateIndexPage() {
@@ -31,13 +37,13 @@ export default function TemplateIndexPage() {
       <Hero
         variant="centered"
         headline="Templates"
-        subheadline="Three opinionated starters built on the UI kit—landing, dashboard, and product—so you can ship faster without generic AI-looking UI."
+        subheadline="Four opinionated starters built on the UI kit—landing, dashboard, product, and banking—so you can ship faster without generic AI-looking UI."
         primaryCta={{ label: "Open landing", href: "/template/landing" }}
         secondaryCta={{ label: "Back to showcase", href: "/", variant: "outline" }}
       />
 
       <Container className="py-12 sm:py-16">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {templates.map((t) => (
             <Card key={t.href} variant="elevated" className="h-full">
               <CardHeader>
