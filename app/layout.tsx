@@ -39,6 +39,7 @@ export default function RootLayout({
         { label: "Landing", href: "/template/landing" },
         { label: "Dashboard", href: "/template/dashboard" },
         { label: "Product", href: "/template/product" },
+        { label: "Banking", href: "/template/banking" },
       ],
     },
   ];
