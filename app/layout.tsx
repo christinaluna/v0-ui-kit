@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import { Navigation, type NavigationItem } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { buttonStyles } from "@/components/ui/button.styles";
@@ -64,6 +65,7 @@ export default function RootLayout({
           <div className="flex-1">{children}</div>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
